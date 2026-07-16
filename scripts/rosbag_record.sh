@@ -13,6 +13,7 @@ TOPICS=(
   "/harvest_crop_list/right/markers"
   "/debug/obstacle_points"
   "/obstacle_best_bin_marker"
+  "/rosout"
 )
 
 echo "--------------------------------------------------"
