@@ -1,0 +1,481 @@
+Panels:
+  - Class: rviz_common/Displays
+    Help Height: 87
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /RobotModel1/Description Topic1
+        - /TF1/Frames1
+      Splitter Ratio: 0.5
+    Tree Height: 904
+  - Class: rviz_common/Selection
+    Name: Selection
+  - Class: rviz_common/Tool Properties
+    Expanded:
+      - /2D Goal Pose1
+      - /Publish Point1
+    Name: Tool Properties
+    Splitter Ratio: 0.5886790156364441
+  - Class: rviz_common/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz_default_plugins/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.029999999329447746
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 10
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Alpha: 1
+      Class: rviz_default_plugins/RobotModel
+      Collision Enabled: false
+      Description File: ""
+      Description Source: Topic
+      Description Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /robot_description
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+      Mass Properties:
+        Inertia: false
+        Mass: false
+      Name: RobotModel
+      TF Prefix: ""
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
+    - Class: rviz_default_plugins/TF
+      Enabled: true
+      Frame Timeout: 1000
+      Frames:
+        All Enabled: false
+        base_link:
+          Value: false
+        endeffector_cutter:
+          Value: false
+        head_mid360_link:
+          Value: false
+        imu_link:
+          Value: false
+        left_base:
+          Value: false
+        left_base_link:
+          Value: false
+        left_base_link_inertia:
+          Value: false
+        left_caster_link:
+          Value: false
+        left_caster_steering_link:
+          Value: false
+        left_crop_center_0:
+          Value: false
+        left_endeffector_base:
+          Value: false
+        left_endeffector_cutter:
+          Value: false
+        left_endeffector_type7:
+          Value: false
+        left_flange:
+          Value: false
+        left_force_sensor:
+          Value: false
+        left_forearm_link:
+          Value: false
+        left_ft_frame:
+          Value: false
+        left_head_camera_bottom_screw_frame:
+          Value: false
+        left_head_camera_color_frame:
+          Value: false
+        left_head_camera_color_optical_frame:
+          Value: false
+        left_head_camera_depth_frame:
+          Value: false
+        left_head_camera_depth_optical_frame:
+          Value: false
+        left_head_camera_link:
+          Value: false
+        left_realsense_cable:
+          Value: false
+        left_realsense_link:
+          Value: false
+        left_shoulder_link:
+          Value: false
+        left_tool0:
+          Value: false
+        left_upper_arm_link:
+          Value: false
+        left_wheel_link:
+          Value: false
+        left_wrist_1_link:
+          Value: false
+        left_wrist_2_link:
+          Value: false
+        left_wrist_3_link:
+          Value: false
+        right_base:
+          Value: false
+        right_base_link:
+          Value: false
+        right_base_link_inertia:
+          Value: false
+        right_caster_link:
+          Value: false
+        right_caster_steering_link:
+          Value: false
+        right_crop_center_0:
+          Value: false
+        right_crop_center_1:
+          Value: false
+        right_crop_center_2:
+          Value: false
+        right_crop_center_3:
+          Value: false
+        right_crop_center_4:
+          Value: false
+        right_crop_center_5:
+          Value: false
+        right_endeffector_base:
+          Value: false
+        right_endeffector_cutter:
+          Value: false
+        right_endeffector_type7:
+          Value: false
+        right_flange:
+          Value: false
+        right_force_sensor:
+          Value: false
+        right_forearm_link:
+          Value: false
+        right_ft_frame:
+          Value: false
+        right_head_camera_bottom_screw_frame:
+          Value: true
+        right_head_camera_color_frame:
+          Value: false
+        right_head_camera_color_optical_frame:
+          Value: false
+        right_head_camera_depth_frame:
+          Value: false
+        right_head_camera_depth_optical_frame:
+          Value: false
+        right_head_camera_link:
+          Value: false
+        right_peduncle:
+          Value: true
+        right_pepper:
+          Value: true
+        right_realsense_cable:
+          Value: false
+        right_realsense_link:
+          Value: false
+        right_shoulder_link:
+          Value: false
+        right_tool0:
+          Value: false
+        right_upper_arm_link:
+          Value: false
+        right_wheel_link:
+          Value: false
+        right_wrist_1_link:
+          Value: false
+        right_wrist_2_link:
+          Value: false
+        right_wrist_3_link:
+          Value: false
+        side_basket_link:
+          Value: false
+      Marker Scale: 0.5
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: false
+      Tree:
+        base_link:
+          head_mid360_link:
+            {}
+          imu_link:
+            {}
+          left_base_link:
+            left_base:
+              {}
+            left_base_link_inertia:
+              left_shoulder_link:
+                left_upper_arm_link:
+                  left_forearm_link:
+                    left_wrist_1_link:
+                      left_wrist_2_link:
+                        left_wrist_3_link:
+                          left_flange:
+                            left_tool0:
+                              left_endeffector_base:
+                                left_endeffector_type7:
+                                  left_endeffector_cutter:
+                                    {}
+                                left_force_sensor:
+                                  {}
+                                left_head_camera_bottom_screw_frame:
+                                  left_head_camera_link:
+                                    left_head_camera_color_frame:
+                                      left_head_camera_color_optical_frame:
+                                        {}
+                                    left_head_camera_depth_frame:
+                                      {}
+                                    left_head_camera_depth_optical_frame:
+                                      left_crop_center_0:
+                                        {}
+                                    left_realsense_cable:
+                                      {}
+                                    left_realsense_link:
+                                      {}
+                          left_ft_frame:
+                            {}
+          left_caster_steering_link:
+            left_caster_link:
+              {}
+          left_wheel_link:
+            {}
+          right_base_link:
+            right_base:
+              {}
+            right_base_link_inertia:
+              right_shoulder_link:
+                right_upper_arm_link:
+                  right_forearm_link:
+                    right_wrist_1_link:
+                      right_wrist_2_link:
+                        right_wrist_3_link:
+                          right_flange:
+                            right_tool0:
+                              right_endeffector_base:
+                                right_endeffector_type7:
+                                  right_endeffector_cutter:
+                                    endeffector_cutter:
+                                      {}
+                                right_force_sensor:
+                                  {}
+                                right_head_camera_bottom_screw_frame:
+                                  right_head_camera_link:
+                                    right_head_camera_color_frame:
+                                      right_head_camera_color_optical_frame:
+                                        {}
+                                    right_head_camera_depth_frame:
+                                      {}
+                                    right_head_camera_depth_optical_frame:
+                                      right_crop_center_0:
+                                        {}
+                                      right_crop_center_1:
+                                        {}
+                                      right_crop_center_2:
+                                        {}
+                                      right_crop_center_3:
+                                        {}
+                                      right_crop_center_4:
+                                        {}
+                                      right_crop_center_5:
+                                        {}
+                                      right_peduncle:
+                                        {}
+                                      right_pepper:
+                                        {}
+                                    right_realsense_cable:
+                                      {}
+                                    right_realsense_link:
+                                      {}
+                          right_ft_frame:
+                            {}
+          right_caster_steering_link:
+            right_caster_link:
+              {}
+          right_wheel_link:
+            {}
+          side_basket_link:
+            {}
+      Update Interval: 0
+      Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz_default_plugins/PointCloud2
+      Color: 255; 255; 255
+      Color Transformer: RGB8
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 4096
+      Min Color: 0; 0; 0
+      Min Intensity: 0
+      Name: PointCloud2
+      Position Transformer: XYZ
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.009999999776482582
+      Style: Flat Squares
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        Filter size: 10
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /detected_points
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz_default_plugins/PointCloud2
+      Color: 255; 255; 255
+      Color Transformer: Intensity
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 4096
+      Min Color: 0; 0; 0
+      Min Intensity: 0
+      Name: PointCloud2
+      Position Transformer: XYZ
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.009999999776482582
+      Style: Flat Squares
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        Filter size: 10
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /debug/obstacle_points
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Class: rviz_default_plugins/MarkerArray
+      Enabled: true
+      Name: MarkerArray
+      Namespaces:
+        {}
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /harvest_crop_list/right/markers
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: base_link
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz_default_plugins/Interact
+      Hide Inactive Objects: true
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/FocusCamera
+    - Class: rviz_default_plugins/Measure
+      Line color: 128; 128; 0
+    - Class: rviz_default_plugins/SetInitialPose
+      Covariance x: 0.25
+      Covariance y: 0.25
+      Covariance yaw: 0.06853891909122467
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /initialpose
+    - Class: rviz_default_plugins/SetGoal
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /goal_pose
+    - Class: rviz_default_plugins/PublishPoint
+      Single click: true
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /clicked_point
+  Transformation:
+    Current:
+      Class: rviz_default_plugins/TF
+  Value: true
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 0.530216634273529
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.05999999865889549
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point:
+        X: -0.8378563523292542
+        Y: 0.1284838169813156
+        Z: 1.1196315288543701
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.05000000074505806
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.009999999776482582
+      Pitch: 0.4053982198238373
+      Target Frame: <Fixed Frame>
+      Value: Orbit (rviz)
+      Yaw: 1.8303983211517334
+    Saved: ~
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 1136
+  Hide Left Dock: false
+  Hide Right Dock: false
+  QMainWindow State: 000000ff00000000fd0000000100000000000001560000041afc0200000004fb000000100044006900730070006c006100790073010000003b0000041a000000c700fffffffb0000001200530065006c0065006300740069006f006e0000000189000000960000005c00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007300000001ce000000b40000005c00fffffffb0000000a00560069006500770073000000023400000196000000a000ffffff000005de0000041a00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Selection:
+    collapsed: false
+  Tool Properties:
+    collapsed: false
+  Views:
+    collapsed: false
+  Width: 1850
+  X: 426
+  Y: 1107
