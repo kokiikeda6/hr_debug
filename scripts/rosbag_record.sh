@@ -14,6 +14,9 @@ TOPICS=(
   "/debug/obstacle_points"
   "/obstacle_best_bin_marker"
   "/rosout"
+  "/debug/right/peduncle3_fruit_points"
+  "/debug/left/peduncle3_fruit_points"
+
 )
 
 echo "--------------------------------------------------"
@@ -23,6 +26,8 @@ echo "--------------------------------------------------"
 # 2. rosbagの保存先とファイル名を設定
 SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 HR1_REPO=${HR1_REPO:-"$SCRIPT_DIR/../../hr1"}
+# HR1_REPO=${HR1_REPO:-"/home/ubuntu/ros2_ws/src/hr1"} #収穫ロボット
+
 
 if ! HR1_REPO_ABS=$(cd "$HR1_REPO" 2>/dev/null && pwd); then
     echo "Error: hr1 repository not found: $HR1_REPO" >&2
