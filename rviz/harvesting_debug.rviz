@@ -5,9 +5,10 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /RobotModel1/Description Topic1
-        - /TF1/Frames1
+        - /Image1
+        - /Image2
       Splitter Ratio: 0.5
-    Tree Height: 904
+    Tree Height: 1171
   - Class: rviz_common/Selection
     Name: Selection
   - Class: rviz_common/Tool Properties
@@ -91,10 +92,32 @@ Visualization Manager:
           Value: false
         left_caster_steering_link:
           Value: false
+        left_crop_center_0:
+          Value: false
+        left_crop_center_1:
+          Value: false
+        left_crop_center_10:
+          Value: false
+        left_crop_center_2:
+          Value: false
+        left_crop_center_3:
+          Value: false
+        left_crop_center_4:
+          Value: false
+        left_crop_center_5:
+          Value: false
+        left_crop_center_6:
+          Value: false
+        left_crop_center_7:
+          Value: false
+        left_crop_center_8:
+          Value: false
+        left_crop_center_9:
+          Value: false
         left_endeffector_base:
           Value: false
         left_endeffector_cutter:
-          Value: false
+          Value: true
         left_endeffector_type7:
           Value: false
         left_flange:
@@ -110,17 +133,21 @@ Visualization Manager:
         left_head_camera_color_optical_frame:
           Value: false
         left_head_camera_depth2colorpoints_frame:
-          Value: true
+          Value: false
         left_head_camera_depth_frame:
           Value: false
         left_head_camera_depth_optical_frame:
           Value: false
         left_head_camera_frame:
-          Value: true
+          Value: false
         left_head_camera_link:
           Value: false
         left_head_camera_transformedDepth_frame:
+          Value: false
+        left_peduncle:
           Value: true
+        left_pepper:
+          Value: false
         left_realsense_cable:
           Value: false
         left_realsense_link:
@@ -140,7 +167,7 @@ Visualization Manager:
         left_wrist_3_link:
           Value: false
         path_tracking_link:
-          Value: true
+          Value: false
         right_base:
           Value: false
         right_base_link:
@@ -155,10 +182,24 @@ Visualization Manager:
           Value: false
         right_crop_center_1:
           Value: false
+        right_crop_center_2:
+          Value: false
+        right_crop_center_3:
+          Value: false
+        right_crop_center_4:
+          Value: false
+        right_crop_center_5:
+          Value: false
+        right_crop_center_6:
+          Value: false
+        right_crop_center_7:
+          Value: false
+        right_crop_center_8:
+          Value: false
         right_endeffector_base:
           Value: false
         right_endeffector_cutter:
-          Value: false
+          Value: true
         right_endeffector_type7:
           Value: false
         right_flange:
@@ -174,21 +215,21 @@ Visualization Manager:
         right_head_camera_color_optical_frame:
           Value: false
         right_head_camera_depth2colorpoints_frame:
-          Value: true
+          Value: false
         right_head_camera_depth_frame:
           Value: false
         right_head_camera_depth_optical_frame:
           Value: false
         right_head_camera_frame:
-          Value: true
+          Value: false
         right_head_camera_link:
           Value: false
         right_head_camera_transformedDepth_frame:
-          Value: true
+          Value: false
         right_peduncle:
           Value: true
         right_pepper:
-          Value: true
+          Value: false
         right_realsense_cable:
           Value: false
         right_realsense_link:
@@ -209,7 +250,7 @@ Visualization Manager:
           Value: false
         side_basket_link:
           Value: false
-      Marker Scale: 0.5
+      Marker Scale: 0.30000001192092896
       Name: TF
       Show Arrows: false
       Show Axes: true
@@ -242,6 +283,28 @@ Visualization Manager:
                                   left_head_camera_color_optical_frame:
                                     {}
                                   left_head_camera_depth_optical_frame:
+                                    left_crop_center_0:
+                                      {}
+                                    left_crop_center_1:
+                                      {}
+                                    left_crop_center_10:
+                                      {}
+                                    left_crop_center_2:
+                                      {}
+                                    left_crop_center_3:
+                                      {}
+                                    left_crop_center_4:
+                                      {}
+                                    left_crop_center_5:
+                                      {}
+                                    left_crop_center_6:
+                                      {}
+                                    left_crop_center_7:
+                                      {}
+                                    left_crop_center_8:
+                                      {}
+                                    left_crop_center_9:
+                                      {}
                                     left_head_camera_frame:
                                       left_head_camera_color_frame:
                                         left_head_camera_depth_frame:
@@ -250,6 +313,10 @@ Visualization Manager:
                                           {}
                                       left_head_camera_depth2colorpoints_frame:
                                         {}
+                                    left_peduncle:
+                                      {}
+                                    left_pepper:
+                                      {}
                                   left_realsense_cable:
                                     {}
                                   left_realsense_link:
@@ -289,6 +356,20 @@ Visualization Manager:
                                     right_crop_center_0:
                                       {}
                                     right_crop_center_1:
+                                      {}
+                                    right_crop_center_2:
+                                      {}
+                                    right_crop_center_3:
+                                      {}
+                                    right_crop_center_4:
+                                      {}
+                                    right_crop_center_5:
+                                      {}
+                                    right_crop_center_6:
+                                      {}
+                                    right_crop_center_7:
+                                      {}
+                                    right_crop_center_8:
                                       {}
                                     right_head_camera_frame:
                                       right_head_camera_color_frame:
@@ -339,7 +420,7 @@ Visualization Manager:
       Position Transformer: XYZ
       Selectable: true
       Size (Pixels): 3
-      Size (m): 0.009999999776482582
+      Size (m): 0.003000000026077032
       Style: Flat Squares
       Topic:
         Depth: 5
@@ -389,14 +470,26 @@ Visualization Manager:
       Enabled: true
       Name: MarkerArray
       Namespaces:
-        right_crop_list_labels: true
-        right_crop_list_spheres: true
+        {}
       Topic:
         Depth: 5
         Durability Policy: Volatile
         History Policy: Keep Last
         Reliability Policy: Reliable
         Value: /harvest_crop_list/right/markers
+      Value: true
+    - Class: rviz_default_plugins/MarkerArray
+      Enabled: true
+      Name: MarkerArray
+      Namespaces:
+        left_crop_list_labels: true
+        left_crop_list_spheres: true
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /harvest_crop_list/left/markers
       Value: true
     - Alpha: 1
       Autocompute Intensity Bounds: true
@@ -408,7 +501,7 @@ Visualization Manager:
       Channel Name: intensity
       Class: rviz_default_plugins/PointCloud2
       Color: 255; 255; 255
-      Color Transformer: ""
+      Color Transformer: Intensity
       Decay Time: 0
       Enabled: true
       Invert Rainbow: false
@@ -417,7 +510,7 @@ Visualization Manager:
       Min Color: 0; 0; 0
       Min Intensity: 0
       Name: PointCloud2
-      Position Transformer: ""
+      Position Transformer: XYZ
       Selectable: true
       Size (Pixels): 3
       Size (m): 0.0010000000474974513
@@ -431,6 +524,68 @@ Visualization Manager:
         Value: /debug/right/peduncle3_fruit_points
       Use Fixed Frame: true
       Use rainbow: true
+      Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz_default_plugins/PointCloud2
+      Color: 255; 255; 255
+      Color Transformer: Intensity
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 4096
+      Min Color: 0; 0; 0
+      Min Intensity: 0
+      Name: PointCloud2
+      Position Transformer: XYZ
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.0010000000474974513
+      Style: Flat Squares
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        Filter size: 10
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /debug/left/peduncle3_fruit_points
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Class: rviz_default_plugins/Image
+      Enabled: true
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: Image
+      Normalize Range: true
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /devices/left_camera/detector/bbox_image
+      Value: true
+    - Class: rviz_default_plugins/Image
+      Enabled: true
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: Image
+      Normalize Range: true
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /devices/right_camera/detector/bbox_image
       Value: true
   Enabled: true
   Global Options:
@@ -478,39 +633,41 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 0.9618066549301147
+      Distance: 5.239595413208008
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.47870010137557983
-        Y: -0.8489068150520325
-        Z: 0.8316157460212708
+        X: 0.08104807138442993
+        Y: -0.8085814714431763
+        Z: 1.0785382986068726
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.08979605883359909
+      Pitch: 0.33479586243629456
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 1.7753973007202148
+      Yaw: 1.5453988313674927
     Saved: ~
 Window Geometry:
   Displays:
     collapsed: false
-  Height: 1136
+  Height: 1403
   Hide Left Dock: false
   Hide Right Dock: false
-  QMainWindow State: 000000ff00000000fd0000000100000000000001560000041afc0200000004fb000000100044006900730070006c006100790073010000003b0000041a000000c700fffffffb0000001200530065006c0065006300740069006f006e0000000189000000960000005c00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007300000001ce000000b40000005c00fffffffb0000000a00560069006500770073000000023400000196000000a000ffffff000005de0000041a00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Image:
+    collapsed: false
+  QMainWindow State: 000000ff00000000fd00000002000000000000015600000525fc0200000004fb000000100044006900730070006c006100790073010000003b00000525000000c700fffffffb0000001200530065006c0065006300740069006f006e0000000189000000960000005c00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007300000001ce000000b40000005c00fffffffb0000000a00560069006500770073000000023400000196000000a000ffffff000000010000040800000525fc0200000002fb0000000a0049006d006100670065010000003b000002980000002800fffffffb0000000a0049006d00610067006501000002d9000002870000002800ffffff000004960000052500000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Selection:
     collapsed: false
   Tool Properties:
     collapsed: false
   Views:
     collapsed: false
-  Width: 1850
-  X: 70
-  Y: 27
+  Width: 2560
+  X: 0
+  Y: 0
