@@ -16,6 +16,8 @@ TOPICS=(
   "/rosout"
   "/debug/right/peduncle3_fruit_points"
   "/debug/left/peduncle3_fruit_points"
+  "/debug/right/obstacle_target_cylinder_points"
+  "/debug/left/obstacle_target_cylinder_points"
 
 )
 
