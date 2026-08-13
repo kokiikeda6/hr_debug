@@ -8,13 +8,20 @@
 ## ビルド
 
 ```bash
-cd ~/hr_ws
+cd ~/ros2_ws
 colcon build --packages-select hr_debug
 source install/setup.bash
 ```
 
 ## RViz の起動
 
+
+収穫動作のチェック用
+```bash
+ros2 launch hr_debug harvesting_debug.launch.py
+```
+
+果柄検出のチェック用
 ```bash
 ros2 launch hr_debug detect_peduncle_debug.launch.py
 ```
