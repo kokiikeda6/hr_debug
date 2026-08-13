@@ -94,9 +94,21 @@ Visualization Manager:
           Value: false
         left_crop_center_1:
           Value: false
+        left_crop_center_2:
+          Value: false
+        left_crop_center_3:
+          Value: false
+        left_crop_center_4:
+          Value: false
         left_crop_rotation_center_0:
           Value: true
         left_crop_rotation_center_1:
+          Value: true
+        left_crop_rotation_center_2:
+          Value: true
+        left_crop_rotation_center_3:
+          Value: true
+        left_crop_rotation_center_4:
           Value: true
         left_endeffector_base:
           Value: false
@@ -158,6 +170,18 @@ Visualization Manager:
           Value: false
         right_caster_steering_link:
           Value: false
+        right_crop_center_0:
+          Value: false
+        right_crop_center_1:
+          Value: false
+        right_crop_center_2:
+          Value: false
+        right_crop_rotation_center_0:
+          Value: true
+        right_crop_rotation_center_1:
+          Value: true
+        right_crop_rotation_center_2:
+          Value: true
         right_endeffector_base:
           Value: false
         right_endeffector_cutter:
@@ -245,9 +269,21 @@ Visualization Manager:
                                       {}
                                     left_crop_center_1:
                                       {}
+                                    left_crop_center_2:
+                                      {}
+                                    left_crop_center_3:
+                                      {}
+                                    left_crop_center_4:
+                                      {}
                                     left_crop_rotation_center_0:
                                       {}
                                     left_crop_rotation_center_1:
+                                      {}
+                                    left_crop_rotation_center_2:
+                                      {}
+                                    left_crop_rotation_center_3:
+                                      {}
+                                    left_crop_rotation_center_4:
                                       {}
                                     left_head_camera_frame:
                                       left_head_camera_color_frame:
@@ -293,6 +329,18 @@ Visualization Manager:
                                   right_head_camera_color_optical_frame:
                                     {}
                                   right_head_camera_depth_optical_frame:
+                                    right_crop_center_0:
+                                      {}
+                                    right_crop_center_1:
+                                      {}
+                                    right_crop_center_2:
+                                      {}
+                                    right_crop_rotation_center_0:
+                                      {}
+                                    right_crop_rotation_center_1:
+                                      {}
+                                    right_crop_rotation_center_2:
+                                      {}
                                     right_head_camera_frame:
                                       right_head_camera_color_frame:
                                         right_head_camera_depth_frame:
@@ -350,45 +398,12 @@ Visualization Manager:
       Use Fixed Frame: true
       Use rainbow: true
       Value: true
-    - Alpha: 1
-      Autocompute Intensity Bounds: true
-      Autocompute Value Bounds:
-        Max Value: 10
-        Min Value: -10
-        Value: true
-      Axis: Z
-      Channel Name: intensity
-      Class: rviz_default_plugins/PointCloud2
-      Color: 255; 255; 255
-      Color Transformer: Intensity
-      Decay Time: 0
-      Enabled: true
-      Invert Rainbow: false
-      Max Color: 255; 255; 255
-      Max Intensity: 4096
-      Min Color: 0; 0; 0
-      Min Intensity: 0
-      Name: PointCloud2
-      Position Transformer: XYZ
-      Selectable: true
-      Size (Pixels): 3
-      Size (m): 0.009999999776482582
-      Style: Flat Squares
-      Topic:
-        Depth: 5
-        Durability Policy: Volatile
-        Filter size: 10
-        History Policy: Keep Last
-        Reliability Policy: Reliable
-        Value: /debug/obstacle_points
-      Use Fixed Frame: true
-      Use rainbow: true
-      Value: true
     - Class: rviz_default_plugins/MarkerArray
       Enabled: true
       Name: right_crop_list
       Namespaces:
-        {}
+        right_crop_list_labels: true
+        right_crop_list_spheres: true
       Topic:
         Depth: 5
         Durability Policy: Volatile
@@ -400,7 +415,8 @@ Visualization Manager:
       Enabled: true
       Name: left_crop_list
       Namespaces:
-        {}
+        left_crop_list_labels: true
+        left_crop_list_spheres: true
       Topic:
         Depth: 5
         Durability Policy: Volatile
@@ -504,6 +520,108 @@ Visualization Manager:
         Reliability Policy: Reliable
         Value: /devices/left_camera/detector/bbox_image
       Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz_default_plugins/PointCloud2
+      Color: 0; 255; 255
+      Color Transformer: FlatColor
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 4096
+      Min Color: 0; 0; 0
+      Min Intensity: 0
+      Name: detected_obstacles
+      Position Transformer: XYZ
+      Selectable: true
+      Size (Pixels): 5
+      Size (m): 0.009999999776482582
+      Style: Points
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        Filter size: 10
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /debug/obstacle_points
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz_default_plugins/PointCloud2
+      Color: 255; 255; 255
+      Color Transformer: ""
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 4096
+      Min Color: 0; 0; 0
+      Min Intensity: 0
+      Name: right_obstacles
+      Position Transformer: ""
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.009999999776482582
+      Style: Points
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        Filter size: 10
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /debug/right/obstacle_target_cylinder_points
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz_default_plugins/PointCloud2
+      Color: 255; 255; 255
+      Color Transformer: RGB8
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 4096
+      Min Color: 0; 0; 0
+      Min Intensity: 0
+      Name: left_obstacles
+      Position Transformer: XYZ
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.009999999776482582
+      Style: Points
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        Filter size: 10
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /debug/left/obstacle_target_cylinder_points
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -550,25 +668,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 6.838371276855469
+      Distance: 3.7945964336395264
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.08104807138442993
-        Y: -0.8085814714431763
-        Z: 1.0785382986068726
+        X: 0.5133089423179626
+        Y: -0.830093502998352
+        Z: 0.6605629324913025
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.33479586243629456
+      Pitch: 0.274795800447464
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 1.5453988313674927
+      Yaw: 1.5953986644744873
     Saved: ~
 Window Geometry:
   Displays:
