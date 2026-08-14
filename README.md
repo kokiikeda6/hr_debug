@@ -35,7 +35,7 @@ ros2 launch hr_debug detect_peduncle_debug.launch.py use_sim_time:=true
 ## rosbag の記録
 
 ```bash
-cd ~/hr_ws/src/hr_debug
+cd ~/ros2_ws/src/hr_debug
 ./scripts/rosbag_record.sh
 ```
 
@@ -63,7 +63,7 @@ cd ~/hr_ws/src/hr_debug
 
 ## hr1 リポジトリの場所
 
-デフォルトでは，`~/hr_ws/src/hr1` を参照します．
+デフォルトでは，`~/ros2_ws/src/hr1` を参照します．
 
 別の場所にある場合:
 
