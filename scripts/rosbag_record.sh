@@ -11,13 +11,21 @@ TOPICS=(
   "/clock"
   "/harvest_crop_list/left/markers"
   "/harvest_crop_list/right/markers"
-  "/debug/obstacle_points"
-  "/obstacle_best_bin_marker"
   "/rosout"
   "/debug/right/peduncle3_fruit_points"
   "/debug/left/peduncle3_fruit_points"
   "/debug/right/obstacle_target_cylinder_points"
   "/debug/left/obstacle_target_cylinder_points"
+  "/debug/right/obstacle_excluded_points"
+  "/debug/left/obstacle_excluded_points"
+  "/debug/right/obstacle_filtered_points"
+  "/debug/left/obstacle_filtered_points"
+  "/debug/right/obstacle_sector_marker"
+  "/debug/left/obstacle_sector_marker"
+  "/debug/right/obstacle_free_interval_marker"
+  "/debug/left/obstacle_free_interval_marker"
+  "/debug/right/obstacle_target_pose_marker"
+  "/debug/left/obstacle_target_pose_marker"
 
 )
 
