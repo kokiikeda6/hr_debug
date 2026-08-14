@@ -26,11 +26,6 @@ ros2 launch hr_debug harvesting_debug.launch.py
 ros2 launch hr_debug detect_peduncle_debug.launch.py
 ```
 
-シミュレーション時など `/clock` を使う場合:
-
-```bash
-ros2 launch hr_debug detect_peduncle_debug.launch.py use_sim_time:=true
-```
 
 ## rosbag の記録
 
