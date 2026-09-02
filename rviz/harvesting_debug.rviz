@@ -90,54 +90,6 @@ Visualization Manager:
           Value: false
         left_caster_steering_link:
           Value: false
-        left_crop_center_0:
-          Value: false
-        left_crop_center_1:
-          Value: false
-        left_crop_center_10:
-          Value: true
-        left_crop_center_11:
-          Value: true
-        left_crop_center_2:
-          Value: false
-        left_crop_center_3:
-          Value: false
-        left_crop_center_4:
-          Value: false
-        left_crop_center_5:
-          Value: true
-        left_crop_center_6:
-          Value: true
-        left_crop_center_7:
-          Value: true
-        left_crop_center_8:
-          Value: true
-        left_crop_center_9:
-          Value: true
-        left_crop_rotation_center_0:
-          Value: true
-        left_crop_rotation_center_1:
-          Value: true
-        left_crop_rotation_center_10:
-          Value: true
-        left_crop_rotation_center_11:
-          Value: true
-        left_crop_rotation_center_2:
-          Value: true
-        left_crop_rotation_center_3:
-          Value: true
-        left_crop_rotation_center_4:
-          Value: true
-        left_crop_rotation_center_5:
-          Value: true
-        left_crop_rotation_center_6:
-          Value: true
-        left_crop_rotation_center_7:
-          Value: true
-        left_crop_rotation_center_8:
-          Value: true
-        left_crop_rotation_center_9:
-          Value: true
         left_endeffector_base:
           Value: false
         left_endeffector_cutter:
@@ -168,10 +120,6 @@ Visualization Manager:
           Value: false
         left_head_camera_transformedDepth_frame:
           Value: false
-        left_peduncle:
-          Value: true
-        left_pepper:
-          Value: true
         left_realsense_cable:
           Value: false
         left_realsense_link:
@@ -206,49 +154,21 @@ Visualization Manager:
           Value: false
         right_crop_center_1:
           Value: false
-        right_crop_center_10:
-          Value: true
-        right_crop_center_11:
-          Value: true
         right_crop_center_2:
           Value: false
         right_crop_center_3:
           Value: true
         right_crop_center_4:
           Value: true
-        right_crop_center_5:
-          Value: true
-        right_crop_center_6:
-          Value: true
-        right_crop_center_7:
-          Value: true
-        right_crop_center_8:
-          Value: true
-        right_crop_center_9:
-          Value: true
         right_crop_rotation_center_0:
           Value: true
         right_crop_rotation_center_1:
-          Value: true
-        right_crop_rotation_center_10:
-          Value: true
-        right_crop_rotation_center_11:
           Value: true
         right_crop_rotation_center_2:
           Value: true
         right_crop_rotation_center_3:
           Value: true
         right_crop_rotation_center_4:
-          Value: true
-        right_crop_rotation_center_5:
-          Value: true
-        right_crop_rotation_center_6:
-          Value: true
-        right_crop_rotation_center_7:
-          Value: true
-        right_crop_rotation_center_8:
-          Value: true
-        right_crop_rotation_center_9:
           Value: true
         right_endeffector_base:
           Value: false
@@ -337,54 +257,6 @@ Visualization Manager:
                                   left_head_camera_color_optical_frame:
                                     {}
                                   left_head_camera_depth_optical_frame:
-                                    left_crop_center_0:
-                                      {}
-                                    left_crop_center_1:
-                                      {}
-                                    left_crop_center_10:
-                                      {}
-                                    left_crop_center_11:
-                                      {}
-                                    left_crop_center_2:
-                                      {}
-                                    left_crop_center_3:
-                                      {}
-                                    left_crop_center_4:
-                                      {}
-                                    left_crop_center_5:
-                                      {}
-                                    left_crop_center_6:
-                                      {}
-                                    left_crop_center_7:
-                                      {}
-                                    left_crop_center_8:
-                                      {}
-                                    left_crop_center_9:
-                                      {}
-                                    left_crop_rotation_center_0:
-                                      {}
-                                    left_crop_rotation_center_1:
-                                      {}
-                                    left_crop_rotation_center_10:
-                                      {}
-                                    left_crop_rotation_center_11:
-                                      {}
-                                    left_crop_rotation_center_2:
-                                      {}
-                                    left_crop_rotation_center_3:
-                                      {}
-                                    left_crop_rotation_center_4:
-                                      {}
-                                    left_crop_rotation_center_5:
-                                      {}
-                                    left_crop_rotation_center_6:
-                                      {}
-                                    left_crop_rotation_center_7:
-                                      {}
-                                    left_crop_rotation_center_8:
-                                      {}
-                                    left_crop_rotation_center_9:
-                                      {}
                                     left_head_camera_frame:
                                       left_head_camera_color_frame:
                                         left_head_camera_depth_frame:
@@ -393,10 +265,6 @@ Visualization Manager:
                                           {}
                                       left_head_camera_depth2colorpoints_frame:
                                         {}
-                                    left_peduncle:
-                                      {}
-                                    left_pepper:
-                                      {}
                                   left_realsense_cable:
                                     {}
                                   left_realsense_link:
@@ -437,49 +305,21 @@ Visualization Manager:
                                       {}
                                     right_crop_center_1:
                                       {}
-                                    right_crop_center_10:
-                                      {}
-                                    right_crop_center_11:
-                                      {}
                                     right_crop_center_2:
                                       {}
                                     right_crop_center_3:
                                       {}
                                     right_crop_center_4:
                                       {}
-                                    right_crop_center_5:
-                                      {}
-                                    right_crop_center_6:
-                                      {}
-                                    right_crop_center_7:
-                                      {}
-                                    right_crop_center_8:
-                                      {}
-                                    right_crop_center_9:
-                                      {}
                                     right_crop_rotation_center_0:
                                       {}
                                     right_crop_rotation_center_1:
-                                      {}
-                                    right_crop_rotation_center_10:
-                                      {}
-                                    right_crop_rotation_center_11:
                                       {}
                                     right_crop_rotation_center_2:
                                       {}
                                     right_crop_rotation_center_3:
                                       {}
                                     right_crop_rotation_center_4:
-                                      {}
-                                    right_crop_rotation_center_5:
-                                      {}
-                                    right_crop_rotation_center_6:
-                                      {}
-                                    right_crop_rotation_center_7:
-                                      {}
-                                    right_crop_rotation_center_8:
-                                      {}
-                                    right_crop_rotation_center_9:
                                       {}
                                     right_head_camera_frame:
                                       right_head_camera_color_frame:
@@ -553,8 +393,7 @@ Visualization Manager:
       Enabled: true
       Name: L_crop_list
       Namespaces:
-        left_crop_list_labels: true
-        left_crop_list_spheres: true
+        {}
       Topic:
         Depth: 5
         Durability Policy: Volatile
@@ -673,8 +512,8 @@ Visualization Manager:
       Axis: Z
       Channel Name: intensity
       Class: rviz_default_plugins/PointCloud2
-      Color: 255; 255; 255
-      Color Transformer: Intensity
+      Color: 0; 255; 255
+      Color Transformer: FlatColor
       Decay Time: 0
       Enabled: true
       Invert Rainbow: false
@@ -695,6 +534,40 @@ Visualization Manager:
         History Policy: Keep Last
         Reliability Policy: Reliable
         Value: /debug/right/obstacle_filtered_points
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz_default_plugins/PointCloud2
+      Color: 255; 255; 255
+      Color Transformer: Intensity
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 4096
+      Min Color: 0; 0; 0
+      Min Intensity: 0
+      Name: R_obs_around_fruit
+      Position Transformer: XYZ
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.009999999776482582
+      Style: Flat Squares
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        Filter size: 10
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /debug/right/obstacle_target_cylinder_points
       Use Fixed Frame: true
       Use rainbow: true
       Value: true
@@ -746,10 +619,7 @@ Visualization Manager:
       Enabled: true
       Name: L_obs_gap
       Namespaces:
-        rejected_narrow_interval: true
-        selected_free_interval: true
-        selected_narrow_fallback_interval: true
-        valid_free_interval: true
+        {}
       Topic:
         Depth: 5
         Durability Policy: Volatile
@@ -795,11 +665,7 @@ Visualization Manager:
       Enabled: true
       Name: L_obs_area
       Namespaces:
-        candidate_bounds: true
-        front_axis: true
-        observation_bounds: true
-        obstacle_fruit_exclusion: true
-        occupied_angle_bins: true
+        {}
       Topic:
         Depth: 5
         Durability Policy: Volatile
@@ -811,8 +677,7 @@ Visualization Manager:
       Enabled: true
       Name: L_obs_avoidance_point
       Namespaces:
-        obstacle_ptp_target: true
-        obstacle_rotation_center: true
+        {}
       Topic:
         Depth: 5
         Durability Policy: Volatile
@@ -866,25 +731,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 4.574704647064209
+      Distance: 2.0808486938476562
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.5102712512016296
-        Y: -0.8303204774856567
-        Z: 0.6605629324913025
+        X: -0.7941175699234009
+        Y: -1.003844141960144
+        Z: 0.7454354166984558
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.4747958183288574
+      Pitch: 0.7147960662841797
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 1.6103986501693726
+      Yaw: 1.0303990840911865
     Saved: ~
 Window Geometry:
   Displays:
@@ -894,7 +759,7 @@ Window Geometry:
   Hide Right Dock: false
   L_camera_image:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000200000000000001560000041afc0200000004fb000000100044006900730070006c006100790073010000003b0000041a000000c700fffffffb0000001200530065006c0065006300740069006f006e0000000189000000960000005c00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007300000001ce000000b40000005c00fffffffb0000000a00560069006500770073000000023400000196000000a000ffffff00000001000002680000041afc0200000002fb0000001c0052005f00630061006d006500720061005f0069006d006100670065010000003b000002110000002800fffffffb0000001c004c005f00630061006d006500720061005f0069006d0061006700650100000252000002030000002800ffffff000003700000041a00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000200000000000001560000041afc0200000004fb000000100044006900730070006c006100790073010000003b0000041a000000c700fffffffb0000001200530065006c0065006300740069006f006e0000000189000000960000005c00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007300000001ce000000b40000005c00fffffffb0000000a00560069006500770073000000023400000196000000a000ffffff00000001000002090000041afc0200000002fb0000001c0052005f00630061006d006500720061005f0069006d006100670065010000003b000002110000002800fffffffb0000001c004c005f00630061006d006500720061005f0069006d0061006700650100000252000002030000002800ffffff000003cf0000041a00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   R_camera_image:
     collapsed: false
   Selection:
