@@ -1,5 +1,19 @@
 #!/bin/bash
 
+# 第1引数でbagの名前を指定できます（省略時は従来の連番）
+if [ "$#" -gt 1 ]; then
+    echo "Usage: $0 [bag_name]" >&2
+    exit 2
+fi
+
+BAG_NAME=${1:-}
+case "$BAG_NAME" in
+    */*|.|..)
+        echo "Error: bag name must not contain '/' or be '.' or '..': $BAG_NAME" >&2
+        exit 2
+        ;;
+esac
+
 # 1. 記録対象トピックの設定
 # --qos-profiles-from-topics が使えないため，トピックを羅列します
 TOPICS=(
@@ -86,11 +100,19 @@ BAG_DATE=$(date +%Y-%m-%d)
 BAG_DIR="$HOME/rosbag/$BAG_DATE/$HR1_BRANCH_DIR"
 mkdir -p "$BAG_DIR"
 
-BAG_INDEX=1
-while [ -e "$BAG_DIR/auto_harvest_$BAG_INDEX" ]; do
-    BAG_INDEX=$((BAG_INDEX + 1))
-done
-BAG_PATH="$BAG_DIR/auto_harvest_$BAG_INDEX"
+if [ -n "$BAG_NAME" ]; then
+    BAG_PATH="$BAG_DIR/$BAG_NAME"
+    if [ -e "$BAG_PATH" ] || [ -L "$BAG_PATH" ]; then
+        echo "Error: output bag already exists: $BAG_PATH" >&2
+        exit 1
+    fi
+else
+    BAG_INDEX=1
+    while [ -e "$BAG_DIR/auto_harvest_$BAG_INDEX" ]; do
+        BAG_INDEX=$((BAG_INDEX + 1))
+    done
+    BAG_PATH="$BAG_DIR/auto_harvest_$BAG_INDEX"
+fi
 
 echo "Save directory: $BAG_DIR"
 echo "Output bag: $BAG_PATH"
