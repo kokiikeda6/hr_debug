@@ -96,10 +96,32 @@ echo "Save directory: $BAG_DIR"
 echo "Output bag: $BAG_PATH"
 echo "--------------------------------------------------"
 
+print_bag_size() {
+    if [ -d "$BAG_PATH" ]; then
+        echo "--------------------------------------------------"
+        echo "Recorded bag size (total disk usage):"
+        du -sh -- "$BAG_PATH"
+    fi
+}
+
+stop_recording() {
+    # 終了処理中の追加のシグナルで wait が中断されないようにします
+    trap '' SIGINT SIGTERM
+    echo "Stopping recording..."
+    kill -INT "$BAG_PID" 2>/dev/null
+    # データとメタデータの書き込み完了を待ってから終了します
+    wait "$BAG_PID"
+}
+
 # 3. バックグラウンドで記録を開始
 # QoSの問題を避けるため，必要最低限の構成にしています
 ros2 bag record -o "$BAG_PATH" "${TOPICS[@]}" &
 BAG_PID=$!
+
+# 起動待ちの間に終了した場合にも，記録を停止してから容量を表示します
+trap print_bag_size EXIT
+trap 'stop_recording; exit 130' SIGINT
+trap 'stop_recording; exit 143' SIGTERM
 
 # レコーダーが立ち上がるまで十分に待機
 sleep 5
@@ -121,7 +143,5 @@ echo "Recording in progress..."
 echo "Press [Ctrl+C] to stop recording safely."
 echo "--------------------------------------------------"
 
-# 5. スクリプト終了（Ctrl+C）時の処理
-trap "echo 'Stopping recording...'; kill -INT $BAG_PID; exit" SIGINT SIGTERM
-
-wait $BAG_PID
+# 5. レコーダーの終了を待つ（通常終了時も EXIT トラップで容量を表示）
+wait "$BAG_PID"
